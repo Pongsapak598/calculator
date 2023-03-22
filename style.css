@@ -1,0 +1,61 @@
+.container {
+    height: 600px;
+    width: 900px;
+    border: rgb(0, 0, 0) solid;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    height: 120px;
+    width: 880px;
+    border: rgb(0, 0, 0) solid;
+}
+
+.body {
+    display: flex;
+}
+
+.num {
+    height: 260px;
+    width: 350px;
+    margin-top: 8px;
+    margin-right: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.num div {
+    height: 100px;
+    width: 100px;
+    border: rgb(0, 0, 0) solid;
+    margin: 5px;
+    text-align: center;
+}
+
+.num .zero {
+    width: 215px;
+}
+
+.operators {
+    height: 260px;
+    width: 250px;
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.operators div {
+    height: 100px;
+    width: 100px;
+    border: rgb(112, 0, 0) solid;
+    margin: 5px;
+    text-align: center;
+}
+
+.operators .equal {
+    width: 215px;
+}
