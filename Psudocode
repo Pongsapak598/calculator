@@ -1,0 +1,76 @@
+
+For plus
+
+    function plus(a, b) {
+        result = a + b;
+    }
+
+For minus
+
+    function plus(a, b) {
+    result = a - b;
+}
+
+For multiply
+
+    function multiply(a, b) {
+    result = a * b;
+}
+
+For Devide
+
+    function multiply(a, b) {
+    result = a / b;
+}
+
+
+
+
+
+/*
+
+functions for each operators (a, b)
+
+create temp variable
+
+create result variable
+
+Get number
+
+Put pressed number into temp by characters (1,2,3,4,5 = 12345)
+    by temp = 1 += 2 += 3 += 4
+
+when click an operator
+    if a === ''
+        a = temp;
+    else b = temp;
+    run function plus(a, b)
+    show result into display
+    a = result
+
+when click an equal
+    if a === '' || b === ''
+        return result
+        
+
+*/
+
+
+dsadasd
+
+let result = '';
+
+function process() {
+    result = temp;
+    return result
+}
+
+
+
+/*
+
+
+
+
+
+

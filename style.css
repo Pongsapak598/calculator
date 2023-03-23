@@ -12,6 +12,13 @@
     height: 120px;
     width: 880px;
     border: rgb(0, 0, 0) solid;
+    display: flex;
+    align-items: center;
+}
+
+#display {
+    font-size: 80px;
+    padding-left: 30px;
 }
 
 .body {
@@ -27,7 +34,7 @@
     flex-wrap: wrap;
 }
 
-.num div {
+.num button {
     height: 100px;
     width: 100px;
     border: rgb(0, 0, 0) solid;
@@ -35,8 +42,9 @@
     text-align: center;
 }
 
-.num .zero {
-    width: 215px;
+
+.num #zero {
+    width: 210px;
 }
 
 .operators {
@@ -48,7 +56,7 @@
 
 }
 
-.operators div {
+.operators button {
     height: 100px;
     width: 100px;
     border: rgb(112, 0, 0) solid;
@@ -58,4 +66,9 @@
 
 .operators .equal {
     width: 215px;
+}
+
+.operators .reset {
+    width: 215px;
+    border: black solid;
 }
