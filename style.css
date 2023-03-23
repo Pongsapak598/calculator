@@ -4,6 +4,7 @@ body {
 }
 
 .container {
+    border-radius: 4%;
     height: 600px;
     width: 640px;
     border: rgb(0, 0, 0) solid;
@@ -42,6 +43,7 @@ body {
 }
 
 .num button {
+    border-radius: 12%;
     height: 100px;
     width: 100px;
     border: rgb(0, 0, 0) solid;
@@ -64,6 +66,7 @@ body {
 }
 
 .operators button {
+    border-radius: 12%;
     height: 100px;
     width: 100px;
     border: rgb(112, 0, 0) solid;
