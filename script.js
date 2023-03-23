@@ -6,13 +6,23 @@ let a = '';
 let b = '';
 
 function showDisplay() {
-    document.getElementById("display").innerHTML = toShow;
+    if (toShow.toString().length <= 18) {
+        document.getElementById("display").style.color = "black";
+        document.getElementById("display").innerHTML = toShow.toLocaleString("en-US");
+    } else if (toShow.toString().length > 18 || toShow.toString().includes('e')) {
+        document.getElementById("display").innerHTML = "GET SOME SLEEP BRO"
+        document.getElementById("display").style.color = "red";
+    }
 }
 
 function button(btn) {
-    temp += btn.value;
-    toShow = temp;
-    showDisplay()
+    if (toShow.toString().length > 18 || toShow.toString().includes('e')) {
+        temp = toShow;
+    } else {
+        temp += btn.value;
+        toShow = +temp;
+        showDisplay()
+    }
 }
 
 function processPlus() {
@@ -33,27 +43,35 @@ function processPlus() {
 }
 
 function processMinus() {
-    tempOp = 'minus';
-    if (a === '') {
-        a = +temp;
-        temp = '';
-        return;
+    if (toShow === '' || toShow === '-') {
+            temp = '-';
+            toShow = temp;
+            showDisplay()
     } else {
-        b = +temp
-        result = a - b;
-        temp = '';
-        a = result;
-        b = '';
-        toShow = result;
-        showDisplay()
+        tempOp = 'minus';
+        if (a === '') {
+            a = +temp;
+            temp = '';
+            return;
+        } else {
+            b = +temp
+            result = a - b;
+            temp = '';
+            a = result;
+            b = '';
+            toShow = result;
+            showDisplay()
+        }
     }
+
+    
 }
 
 function processMultiply() {
     tempOp = 'multiply';
     if (a === '') {
         a = +temp;
-        temp = '';
+        temp = ''; 
         return;
     } else {
         b = +temp
@@ -71,7 +89,7 @@ function processMultiply() {
     }
 }
 
-function processDevide() {
+function processDevide() { 
     tempOp = 'devide';
     if (a === '') {
         a = +temp;

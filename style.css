@@ -1,8 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     height: 600px;
-    width: 900px;
+    width: 640px;
     border: rgb(0, 0, 0) solid;
-    padding: 16px;
+    padding: 32px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,19 +15,21 @@
 
 .display {
     height: 120px;
-    width: 880px;
+    width: 580px;
     border: rgb(0, 0, 0) solid;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 #display {
-    font-size: 80px;
-    padding-left: 30px;
+    font-size: 50px;
+    padding-right: 30px;
 }
 
 .body {
     display: flex;
+    margin-left: 32px;
 }
 
 .num {
@@ -69,6 +76,6 @@
 }
 
 .operators .reset {
-    width: 215px;
+    width: 210px;
     border: black solid;
 }
